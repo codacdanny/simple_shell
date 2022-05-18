@@ -1,5 +1,13 @@
 #include "main.h"
 
+/**
+ * main - function that should give same
+ * output as the shell.
+ * @ac: number of arguments which may not be used
+ * @av: string of arguments
+ *
+ * Return: Always 0
+ */
 int main(int ac __attribute__((unused)), char **av __attribute__((unused)))
 {
 	char *line = NULL;
