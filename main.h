@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #ifndef _MAIN_H_
 #define _MAIN_H_
 
@@ -229,5 +230,28 @@ void aux_help_cd(void);
 
 /* get_help.c */
 int get_help(data_shell *datash);
+=======
+#ifndef MAIN_H
+#define MAIN_H
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <unistd.h>
+#include <string.h>
+#include <sys/types.h>
+#include <sys/stat.h>
+#include <limits.h>
+#include <sys/wait.h>
+
+char **populate(char *s, int type);
+char *_strdup(char *s);
+char *trim(char *s);
+int _strcmp(char *s1, char *s2);
+char *_strcat(char *dest, char *src);
+void process(char **toks, char **env __attribute__((unused)), int *status);
+char *pathfinder(char **env);
+void addPath(char **command, char **env, int *status);
+char *_strduppop(char *s);
+>>>>>>> 27ec0b7a845e9698a89f42c3f6da55bf8d2ca7ee
 
 #endif
